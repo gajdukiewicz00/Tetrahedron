@@ -1,56 +1,7 @@
-# Maven target directory
-/target/
-
-# Log files
-/logs/
-/*.log
-
-# IntelliJ IDEA specific files
-.idea/
-*.iml
 *.iws
-out/
 
-# Eclipse specific files
-.project
 .classpath
-.settings/
 
-# NetBeans specific files
-nbproject/
 build/
 
-# Mac OS specific files
 .DS_Store
-
-# Log4J2 configuration
-*.log
-
-# Temporary files
-*.tmp
-*.bak
-*.swp
-*~
-
-# Compiled files
-*.class
-
-# Maven-specific files
-dependency-reduced-pom.xml
-.mvn/
-!/.mvn/wrapper/maven-wrapper.jar
-
-# Unit test reports
-surefire-reports/
-
-# Temporary files created by JetBrains IDEs
-.idea/
-*.iml
-
-# Logs and temp files
-logs/
-app.log
-
-# Generated files
-bin/
-gen/
