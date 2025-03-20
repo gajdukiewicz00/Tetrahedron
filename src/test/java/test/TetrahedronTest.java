@@ -1,10 +1,10 @@
 package test;
 
-import entity.Point;
-import entity.Tetrahedron;
-import action.TetrahedronCalculator;
-import factory.TetrahedronFactory;
-import exception.InvalidDataException;
+import com.epam.tetrahedron.action.TetrahedronCalculator;
+import com.epam.tetrahedron.entity.Point;
+import com.epam.tetrahedron.entity.Tetrahedron;
+import com.epam.tetrahedron.factory.TetrahedronFactory;
+import com.epam.tetrahedron.exception.InvalidDataException;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

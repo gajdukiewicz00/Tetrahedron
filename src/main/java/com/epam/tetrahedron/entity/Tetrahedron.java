@@ -1,4 +1,4 @@
-package entity;
+package com.epam.tetrahedron.entity;
 
 public class Tetrahedron {
     private Point[] vertices;

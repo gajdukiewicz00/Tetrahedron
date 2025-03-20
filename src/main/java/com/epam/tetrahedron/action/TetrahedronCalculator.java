@@ -1,8 +1,8 @@
-package action;
+package com.epam.tetrahedron.action;
 
-import entity.Point;
-import entity.Tetrahedron;
-import util.LoggerUtil;
+import com.epam.tetrahedron.entity.Point;
+import com.epam.tetrahedron.entity.Tetrahedron;
+import com.epam.tetrahedron.util.LoggerUtil;
 
 public class TetrahedronCalculator {
 

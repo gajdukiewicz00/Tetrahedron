@@ -1,4 +1,4 @@
-package util;
+package com.epam.tetrahedron.util;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
