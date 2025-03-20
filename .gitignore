@@ -1,38 +1,56 @@
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+# Maven target directory
+/target/
 
-### IntelliJ IDEA ###
-.idea/modules.xml
-.idea/jarRepositories.xml
-.idea/compiler.xml
-.idea/libraries/
-*.iws
+# Log files
+/logs/
+/*.log
+
+# IntelliJ IDEA specific files
+.idea/
 *.iml
-*.ipr
+*.iws
+out/
 
-### Eclipse ###
-.apt_generated
-.classpath
-.factorypath
+# Eclipse specific files
 .project
-.settings
-.springBeans
-.sts4-cache
+.classpath
+.settings/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
+# NetBeans specific files
+nbproject/
 build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
-.vscode/
-
-### Mac OS ###
+# Mac OS specific files
 .DS_Store
+
+# Log4J2 configuration
+*.log
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# Compiled files
+*.class
+
+# Maven-specific files
+dependency-reduced-pom.xml
+.mvn/
+!/.mvn/wrapper/maven-wrapper.jar
+
+# Unit test reports
+surefire-reports/
+
+# Temporary files created by JetBrains IDEs
+.idea/
+*.iml
+
+# Logs and temp files
+logs/
+app.log
+
+# Generated files
+bin/
+gen/

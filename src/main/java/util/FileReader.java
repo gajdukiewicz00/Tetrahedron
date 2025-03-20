@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.ArrayList;
 import entity.Point;
 import entity.Tetrahedron;
+import util.LoggerUtil;
 
 public class FileReader {
 
@@ -27,14 +28,14 @@ public class FileReader {
                         }
                         tetrahedrons.add(new Tetrahedron(vertices));
                     } catch (NumberFormatException e) {
-                        System.err.println("Invalid number format: " + line);
+                        LoggerUtil.LOGGER.error("Invalid number format: " + line);
                     }
                 } else {
-                    System.err.println("Invalid data length: " + line);
+                    LoggerUtil.LOGGER.error("Invalid data length: " + line);
                 }
             }
         } catch (IOException e) {
-            System.err.println("Error reading file: " + e.getMessage());
+            LoggerUtil.LOGGER.error("Error reading file: " + e.getMessage());
         }
         return tetrahedrons;
     }
