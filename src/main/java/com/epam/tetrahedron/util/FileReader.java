@@ -1,13 +1,12 @@
-package util;
+package com.epam.tetrahedron.util;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 import java.util.ArrayList;
-import entity.Point;
-import entity.Tetrahedron;
-import util.LoggerUtil;
+import com.epam.tetrahedron.entity.Point;
+import com.epam.tetrahedron.entity.Tetrahedron;
 
 public class FileReader {
 

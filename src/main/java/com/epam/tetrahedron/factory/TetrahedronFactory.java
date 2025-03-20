@@ -1,8 +1,8 @@
-package factory;
+package com.epam.tetrahedron.factory;
 
-import entity.Point;
-import entity.Tetrahedron;
-import exception.InvalidDataException;
+import com.epam.tetrahedron.entity.Point;
+import com.epam.tetrahedron.entity.Tetrahedron;
+import com.epam.tetrahedron.exception.InvalidDataException;
 
 public class TetrahedronFactory {
 
