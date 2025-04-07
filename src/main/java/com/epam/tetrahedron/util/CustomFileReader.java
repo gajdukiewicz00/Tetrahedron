@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import com.epam.tetrahedron.entity.Point;
 import com.epam.tetrahedron.entity.Tetrahedron;
 
-public class FileReader {
+public class CustomFileReader {
 
     public static List<Tetrahedron> readTetrahedrons(String fileName) {
         List<Tetrahedron> tetrahedrons = new ArrayList<>();

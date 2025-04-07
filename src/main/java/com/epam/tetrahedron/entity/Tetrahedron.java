@@ -1,7 +1,10 @@
 package com.epam.tetrahedron.entity;
 
+import java.util.Arrays;
+
 public class Tetrahedron {
     private Point[] vertices;
+    private int id ;
 
     public Tetrahedron(Point[] vertices) {
         if (vertices.length != 4) {
@@ -14,6 +17,18 @@ public class Tetrahedron {
 
     @Override
     public String toString() {
-        return "Tetrahedron with vertices: " + vertices[0] + ", " + vertices[1] + ", " + vertices[2] + ", " + vertices[3];
+        final StringBuilder sb = new StringBuilder("Tetrahedron{");
+        sb.append("vertices=").append(Arrays.toString(vertices));
+        sb.append(", id=").append(id);
+        sb.append('}');
+        return sb.toString();
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 }
