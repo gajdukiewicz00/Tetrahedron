@@ -35,3 +35,47 @@ Caused by: java.nio.file.NoSuchFileException: resources\input.txt
 	at java.nio.file.Files.lines(Files.java:4212) ~[?:?]
 	at com.epam.tetrahedron.reader.TetrahedronReader.readLines(TetrahedronReader.java:20) ~[classes/:?]
 	... 1 more
+2025-04-15 21:50:00 INFO  com.epam.tetrahedron.Main - Application started
+2025-04-15 21:50:00 INFO  com.epam.tetrahedron.reader.TetrahedronReader - Reading file: resources\input.txt
+2025-04-15 21:50:00 INFO  com.epam.tetrahedron.reader.TetrahedronReader - Successfully read 2 lines from file
+2025-04-15 21:50:00 INFO  com.epam.tetrahedron.Main - Loaded 2 lines from input file
+2025-04-15 21:50:00 INFO  com.epam.tetrahedron.factory.TetrahedronFactory - Tetrahedron created with id 1
+2025-04-15 21:50:00 INFO  com.epam.tetrahedron.repository.TetrahedronRepository - Tetrahedron added to repository: Tetrahedron{id=1, a=Point{x=0.0, y=0.0, z=0.0}, b=Point{x=1.0, y=0.0, z=0.0}, c=Point{x=0.0, y=1.0, z=0.0}, d=Point{x=0.0, y=0.0, z=1.0}}
+2025-04-15 21:50:00 INFO  com.epam.tetrahedron.observer.WarehouseObserver - Observer triggered for tetrahedron id: 1
+2025-04-15 21:50:00 INFO  com.epam.tetrahedron.action.TetrahedronService - Calculated volume: 0.16666666666666666 for tetrahedron id: 1
+2025-04-15 21:50:00 INFO  com.epam.tetrahedron.action.TetrahedronService - Calculated surface area: 2.3660254037844384 for tetrahedron id: 1
+2025-04-15 21:50:00 INFO  com.epam.tetrahedron.observer.WarehouseObserver - Updated warehouse for tetrahedron id: 1 with parameters: TetrahedronParameters{volume=0.16666666666666666, surfaceArea=2.3660254037844384}
+2025-04-15 21:50:00 WARN  com.epam.tetrahedron.parser.TetrahedronParser - Invalid coordinate found: '4   ← невалидная (все на одной прямой/плоскости)' in line: 1;1;1; 2;2;2; 3;3;3; 4;4;4   ← невалидная (все на одной прямой/плоскости)
+2025-04-15 21:50:00 WARN  com.epam.tetrahedron.Main - Skipping invalid line: 1;1;1; 2;2;2; 3;3;3; 4;4;4   ← невалидная (все на одной прямой/плоскости)
+2025-04-15 21:50:00 INFO  com.epam.tetrahedron.Main - Finished loading tetrahedrons. Total valid: 1
+2025-04-15 21:50:00 INFO  com.epam.tetrahedron.Main - 
+--- Warehouse contents ---
+2025-04-15 21:50:00 INFO  com.epam.tetrahedron.Main - ID: 1 => TetrahedronParameters{volume=0.16666666666666666, surfaceArea=2.3660254037844384}
+2025-04-15 21:50:00 INFO  com.epam.tetrahedron.Main - 
+--- Tetrahedrons with volume > 100 ---
+2025-04-15 21:50:00 INFO  com.epam.tetrahedron.action.TetrahedronService - Calculated volume: 0.16666666666666666 for tetrahedron id: 1
+2025-04-15 21:50:00 INFO  com.epam.tetrahedron.repository.TetrahedronRepository - Query result size: 0
+2025-04-15 21:55:59 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\gajdu\AppData\Local\JetBrains\IntelliJIdea2024.2\temp-testng-customsuite.xml
+
+2025-04-15 21:55:59 INFO  com.epam.tetrahedron.factory.TetrahedronFactory - Tetrahedron created with id 1
+2025-04-15 21:55:59 ERROR com.epam.tetrahedron.factory.TetrahedronFactory - Invalid tetrahedron geometry for tetrahedron: Tetrahedron{id=1, a=Point{x=1.0, y=1.0, z=1.0}, b=Point{x=2.0, y=2.0, z=2.0}, c=Point{x=3.0, y=3.0, z=3.0}, d=Point{x=4.0, y=4.0, z=4.0}}
+2025-04-15 21:55:59 INFO  com.epam.tetrahedron.factory.TetrahedronFactory - Tetrahedron created with id 2
+2025-04-15 21:56:17 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\gajdu\AppData\Local\JetBrains\IntelliJIdea2024.2\temp-testng-customsuite.xml
+
+2025-04-15 21:56:17 INFO  com.epam.tetrahedron.action.TetrahedronService - Calculated surface area: 2.3660254037844384 for tetrahedron id: 1
+2025-04-15 21:56:17 INFO  com.epam.tetrahedron.action.TetrahedronService - Calculated volume: 0.16666666666666666 for tetrahedron id: 1
+2025-04-15 21:56:17 INFO  com.epam.tetrahedron.action.TetrahedronService - Calculated volume: 0.16666666666666666 for tetrahedron id: 1
+2025-04-15 21:57:34 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\gajdu\AppData\Local\JetBrains\IntelliJIdea2024.2\temp-testng-customsuite.xml
+
+2025-04-15 21:58:32 INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\gajdu\AppData\Local\JetBrains\IntelliJIdea2024.2\temp-testng-customsuite.xml
+
+2025-04-15 21:58:32 INFO  com.epam.tetrahedron.observer.WarehouseObserver - Observer triggered for tetrahedron id: 100
+2025-04-15 21:58:32 INFO  com.epam.tetrahedron.action.TetrahedronService - Calculated volume: 0.16666666666666666 for tetrahedron id: 100
+2025-04-15 21:58:32 INFO  com.epam.tetrahedron.action.TetrahedronService - Calculated surface area: 2.3660254037844384 for tetrahedron id: 100
+2025-04-15 21:58:32 INFO  com.epam.tetrahedron.observer.WarehouseObserver - Updated warehouse for tetrahedron id: 100 with parameters: TetrahedronParameters{volume=0.16666666666666666, surfaceArea=2.3660254037844384}
+2025-04-15 21:58:32 INFO  com.epam.tetrahedron.action.TetrahedronService - Calculated volume: 0.16666666666666666 for tetrahedron id: 100
+2025-04-15 21:58:32 INFO  com.epam.tetrahedron.action.TetrahedronService - Calculated surface area: 2.3660254037844384 for tetrahedron id: 100
