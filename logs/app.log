@@ -6,3 +6,32 @@
 2025-03-20 18:00:34 [main] INFO  util.LoggerUtil - Calculated volume: 0.16666666666666666
 2025-03-20 18:11:47 [main] INFO  com.epam.tetrahedron.util.LoggerUtil - Calculating volume for tetrahedron: Tetrahedron with vertices: (0.0, 0.0, 0.0), (1.0, 0.0, 0.0), (0.0, 1.0, 0.0), (0.0, 0.0, 1.0)
 2025-03-20 18:11:47 [main] INFO  com.epam.tetrahedron.util.LoggerUtil - Calculated volume: 0.16666666666666666
+2025-04-15 21:44:02 INFO  com.epam.tetrahedron.Main - Application started
+2025-04-15 21:44:02 INFO  com.epam.tetrahedron.reader.TetrahedronReader - Reading file: resources\input.txt
+2025-04-15 21:44:02 ERROR com.epam.tetrahedron.reader.TetrahedronReader - Error reading file: resources\input.txt
+java.nio.file.NoSuchFileException: resources\input.txt
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[?:?]
+	at sun.nio.fs.WindowsFileSystemProvider.newFileChannel(WindowsFileSystemProvider.java:119) ~[?:?]
+	at java.nio.channels.FileChannel.open(FileChannel.java:309) ~[?:?]
+	at java.nio.channels.FileChannel.open(FileChannel.java:369) ~[?:?]
+	at java.nio.file.Files.lines(Files.java:4117) ~[?:?]
+	at java.nio.file.Files.lines(Files.java:4212) ~[?:?]
+	at com.epam.tetrahedron.reader.TetrahedronReader.readLines(TetrahedronReader.java:20) [classes/:?]
+	at com.epam.tetrahedron.Main.main(Main.java:36) [classes/:?]
+2025-04-15 21:44:02 ERROR com.epam.tetrahedron.Main - Fatal error during application run
+com.epam.tetrahedron.exception.TetrahedronException: Failed to read file: resources\input.txt
+	at com.epam.tetrahedron.reader.TetrahedronReader.readLines(TetrahedronReader.java:30) ~[classes/:?]
+	at com.epam.tetrahedron.Main.main(Main.java:36) [classes/:?]
+Caused by: java.nio.file.NoSuchFileException: resources\input.txt
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103) ~[?:?]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108) ~[?:?]
+	at sun.nio.fs.WindowsFileSystemProvider.newFileChannel(WindowsFileSystemProvider.java:119) ~[?:?]
+	at java.nio.channels.FileChannel.open(FileChannel.java:309) ~[?:?]
+	at java.nio.channels.FileChannel.open(FileChannel.java:369) ~[?:?]
+	at java.nio.file.Files.lines(Files.java:4117) ~[?:?]
+	at java.nio.file.Files.lines(Files.java:4212) ~[?:?]
+	at com.epam.tetrahedron.reader.TetrahedronReader.readLines(TetrahedronReader.java:20) ~[classes/:?]
+	... 1 more
