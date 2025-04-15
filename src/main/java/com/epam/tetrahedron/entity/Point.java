@@ -1,9 +1,9 @@
 package com.epam.tetrahedron.entity;
 
 public class Point {
-    private double x;
-    private double y;
-    private double z;
+    private final double x;
+    private final double y;
+    private final double z;
 
     public Point(double x, double y, double z) {
         this.x = x;
@@ -11,27 +11,43 @@ public class Point {
         this.z = z;
     }
 
-    public double getX() { return x; }
-    public double getY() { return y; }
-    public double getZ() { return z; }
+    public double getX() {
+        return x;
+    }
 
-    @Override
-    public String toString() {
-        return "(" + x + ", " + y + ", " + z + ")";
+    public double getY() {
+        return y;
+    }
+
+    public double getZ() {
+        return z;
     }
 
     @Override
-    public int hashCode() {
-        return Double.hashCode(x) + Double.hashCode(y) + Double.hashCode(z);
+    public String toString() {
+        return "Point{" +
+                "x=" + x +
+                ", y=" + y +
+                ", z=" + z +
+                '}';
     }
 
     @Override
     public boolean equals(Object obj) {
         if (this == obj) return true;
-        if (obj == null || getClass() != obj.getClass()) return false;
-        Point point = (Point) obj;
-        return Double.compare(point.x, x) == 0 &&
-                Double.compare(point.y, y) == 0 &&
-                Double.compare(point.z, z) == 0;
+        if (!(obj instanceof Point)) return false;
+
+        Point other = (Point) obj;
+        return Double.compare(x, other.x) == 0 &&
+                Double.compare(y, other.y) == 0 &&
+                Double.compare(z, other.z) == 0;
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Double.hashCode(x);
+        result = 31 * result + Double.hashCode(y);
+        result = 31 * result + Double.hashCode(z);
+        return result;
     }
 }
